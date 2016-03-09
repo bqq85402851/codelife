@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4C8825E1C8E98B1001404A9 /* testOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C8825D1C8E98B1001404A9 /* testOneViewController.m */; };
+		F4C882611C8EA693001404A9 /* testTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C882601C8EA693001404A9 /* testTwoViewController.m */; };
 		F4D6010B1C45E29C00142C64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D6010A1C45E29C00142C64 /* main.m */; };
 		F4D6010E1C45E29C00142C64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D6010D1C45E29C00142C64 /* AppDelegate.m */; };
 		F4D601111C45E29C00142C64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D601101C45E29C00142C64 /* ViewController.m */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F4C8825C1C8E98B1001404A9 /* testOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testOneViewController.h; sourceTree = "<group>"; };
+		F4C8825D1C8E98B1001404A9 /* testOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testOneViewController.m; sourceTree = "<group>"; };
+		F4C8825F1C8EA693001404A9 /* testTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testTwoViewController.h; sourceTree = "<group>"; };
+		F4C882601C8EA693001404A9 /* testTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testTwoViewController.m; sourceTree = "<group>"; };
 		F4D601061C45E29C00142C64 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D6010A1C45E29C00142C64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4D6010C1C45E29C00142C64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +111,10 @@
 				F4D6010D1C45E29C00142C64 /* AppDelegate.m */,
 				F4D6010F1C45E29C00142C64 /* ViewController.h */,
 				F4D601101C45E29C00142C64 /* ViewController.m */,
+				F4C8825C1C8E98B1001404A9 /* testOneViewController.h */,
+				F4C8825D1C8E98B1001404A9 /* testOneViewController.m */,
+				F4C8825F1C8EA693001404A9 /* testTwoViewController.h */,
+				F4C882601C8EA693001404A9 /* testTwoViewController.m */,
 				F4D601121C45E29C00142C64 /* Main.storyboard */,
 				F4D601151C45E29C00142C64 /* Assets.xcassets */,
 				F4D601171C45E29C00142C64 /* LaunchScreen.storyboard */,
@@ -273,6 +283,8 @@
 				F4D601111C45E29C00142C64 /* ViewController.m in Sources */,
 				F4D6010E1C45E29C00142C64 /* AppDelegate.m in Sources */,
 				F4D6010B1C45E29C00142C64 /* main.m in Sources */,
+				F4C882611C8EA693001404A9 /* testTwoViewController.m in Sources */,
+				F4C8825E1C8E98B1001404A9 /* testOneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +510,7 @@
 				F4D601351C45E29C00142C64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4D601361C45E29C00142C64 /* Build configuration list for PBXNativeTarget "testTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +519,7 @@
 				F4D601381C45E29C00142C64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4D601391C45E29C00142C64 /* Build configuration list for PBXNativeTarget "testUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +528,7 @@
 				F4D6013B1C45E29C00142C64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
