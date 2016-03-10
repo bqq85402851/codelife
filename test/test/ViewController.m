@@ -35,6 +35,13 @@
     [self.view addSubview:nextButton];
     
     NSLog(@"A:%s",__func__);
+    
+    /**
+     *  僵尸对象
+     *
+     *  @return Zombie Object
+     */
+    
 }
 -(void)next{
     [self.navigationController pushViewController:[[testOneViewController alloc]init] animated:YES];
