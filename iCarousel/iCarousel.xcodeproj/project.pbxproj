@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		971EB4A9B5FC82601E921392 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4636BDC38D4176814A21BF6 /* libPods.a */; };
+		F4CE30D21C92ADE50050CAB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CE30D11C92ADE50050CAB0 /* main.m */; };
+		F4CE30D51C92ADE50050CAB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CE30D41C92ADE50050CAB0 /* AppDelegate.m */; };
+		F4CE30D81C92ADE50050CAB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CE30D71C92ADE50050CAB0 /* ViewController.m */; };
+		F4CE30DB1C92ADE50050CAB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CE30D91C92ADE50050CAB0 /* Main.storyboard */; };
+		F4CE30DD1C92ADE50050CAB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CE30DC1C92ADE50050CAB0 /* Assets.xcassets */; };
+		F4CE30E01C92ADE50050CAB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CE30DE1C92ADE50050CAB0 /* LaunchScreen.storyboard */; };
+		F4CE30EB1C92ADE50050CAB0 /* iCarouselTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CE30EA1C92ADE50050CAB0 /* iCarouselTests.m */; };
+		F4CE30F61C92ADE50050CAB0 /* iCarouselUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CE30F51C92ADE50050CAB0 /* iCarouselUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4CE30E71C92ADE50050CAB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4CE30C51C92ADE50050CAB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4CE30CC1C92ADE50050CAB0;
+			remoteInfo = iCarousel;
+		};
+		F4CE30F21C92ADE50050CAB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4CE30C51C92ADE50050CAB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4CE30CC1C92ADE50050CAB0;
+			remoteInfo = iCarousel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6DAE7417B673007F16A9B233 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D4636BDC38D4176814A21BF6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6A4C745E216125234F766F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F4CE30CD1C92ADE50050CAB0 /* iCarousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCarousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4CE30D11C92ADE50050CAB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4CE30D31C92ADE50050CAB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F4CE30D41C92ADE50050CAB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F4CE30D61C92ADE50050CAB0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F4CE30D71C92ADE50050CAB0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F4CE30DA1C92ADE50050CAB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4CE30DC1C92ADE50050CAB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4CE30DF1C92ADE50050CAB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4CE30E11C92ADE50050CAB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4CE30E61C92ADE50050CAB0 /* iCarouselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCarouselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4CE30EA1C92ADE50050CAB0 /* iCarouselTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCarouselTests.m; sourceTree = "<group>"; };
+		F4CE30EC1C92ADE50050CAB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4CE30F11C92ADE50050CAB0 /* iCarouselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCarouselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4CE30F51C92ADE50050CAB0 /* iCarouselUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCarouselUITests.m; sourceTree = "<group>"; };
+		F4CE30F71C92ADE50050CAB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4CE30CA1C92ADE50050CAB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				971EB4A9B5FC82601E921392 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CE30E31C92ADE50050CAB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CE30EE1C92ADE50050CAB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90CC3A20BB7F07555172848D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC6A4C745E216125234F766F /* Pods.debug.xcconfig */,
+				6DAE7417B673007F16A9B233 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4CE30C41C92ADE50050CAB0 = {
+			isa = PBXGroup;
+			children = (
+				F4CE30CF1C92ADE50050CAB0 /* iCarousel */,
+				F4CE30E91C92ADE50050CAB0 /* iCarouselTests */,
+				F4CE30F41C92ADE50050CAB0 /* iCarouselUITests */,
+				F4CE30CE1C92ADE50050CAB0 /* Products */,
+				90CC3A20BB7F07555172848D /* Pods */,
+				F8020D60ACCE69DD462DCC59 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4CE30CE1C92ADE50050CAB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4CE30CD1C92ADE50050CAB0 /* iCarousel.app */,
+				F4CE30E61C92ADE50050CAB0 /* iCarouselTests.xctest */,
+				F4CE30F11C92ADE50050CAB0 /* iCarouselUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4CE30CF1C92ADE50050CAB0 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				F4CE30D31C92ADE50050CAB0 /* AppDelegate.h */,
+				F4CE30D41C92ADE50050CAB0 /* AppDelegate.m */,
+				F4CE30D61C92ADE50050CAB0 /* ViewController.h */,
+				F4CE30D71C92ADE50050CAB0 /* ViewController.m */,
+				F4CE30D91C92ADE50050CAB0 /* Main.storyboard */,
+				F4CE30DC1C92ADE50050CAB0 /* Assets.xcassets */,
+				F4CE30DE1C92ADE50050CAB0 /* LaunchScreen.storyboard */,
+				F4CE30E11C92ADE50050CAB0 /* Info.plist */,
+				F4CE30D01C92ADE50050CAB0 /* Supporting Files */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		F4CE30D01C92ADE50050CAB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4CE30D11C92ADE50050CAB0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4CE30E91C92ADE50050CAB0 /* iCarouselTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4CE30EA1C92ADE50050CAB0 /* iCarouselTests.m */,
+				F4CE30EC1C92ADE50050CAB0 /* Info.plist */,
+			);
+			path = iCarouselTests;
+			sourceTree = "<group>";
+		};
+		F4CE30F41C92ADE50050CAB0 /* iCarouselUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4CE30F51C92ADE50050CAB0 /* iCarouselUITests.m */,
+				F4CE30F71C92ADE50050CAB0 /* Info.plist */,
+			);
+			path = iCarouselUITests;
+			sourceTree = "<group>";
+		};
+		F8020D60ACCE69DD462DCC59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4636BDC38D4176814A21BF6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4CE30CC1C92ADE50050CAB0 /* iCarousel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CE30FA1C92ADE50050CAB0 /* Build configuration list for PBXNativeTarget "iCarousel" */;
+			buildPhases = (
+				6C42F01DB738BE14895D7178 /* Check Pods Manifest.lock */,
+				F4CE30C91C92ADE50050CAB0 /* Sources */,
+				F4CE30CA1C92ADE50050CAB0 /* Frameworks */,
+				F4CE30CB1C92ADE50050CAB0 /* Resources */,
+				1038F757D8D21EFBB474044A /* Embed Pods Frameworks */,
+				59B04D7B482AFBA80E937984 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCarousel;
+			productName = iCarousel;
+			productReference = F4CE30CD1C92ADE50050CAB0 /* iCarousel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4CE30E51C92ADE50050CAB0 /* iCarouselTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CE30FD1C92ADE50050CAB0 /* Build configuration list for PBXNativeTarget "iCarouselTests" */;
+			buildPhases = (
+				F4CE30E21C92ADE50050CAB0 /* Sources */,
+				F4CE30E31C92ADE50050CAB0 /* Frameworks */,
+				F4CE30E41C92ADE50050CAB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4CE30E81C92ADE50050CAB0 /* PBXTargetDependency */,
+			);
+			name = iCarouselTests;
+			productName = iCarouselTests;
+			productReference = F4CE30E61C92ADE50050CAB0 /* iCarouselTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4CE30F01C92ADE50050CAB0 /* iCarouselUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CE31001C92ADE50050CAB0 /* Build configuration list for PBXNativeTarget "iCarouselUITests" */;
+			buildPhases = (
+				F4CE30ED1C92ADE50050CAB0 /* Sources */,
+				F4CE30EE1C92ADE50050CAB0 /* Frameworks */,
+				F4CE30EF1C92ADE50050CAB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4CE30F31C92ADE50050CAB0 /* PBXTargetDependency */,
+			);
+			name = iCarouselUITests;
+			productName = iCarouselUITests;
+			productReference = F4CE30F11C92ADE50050CAB0 /* iCarouselUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4CE30C51C92ADE50050CAB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "英策网络科技";
+				TargetAttributes = {
+					F4CE30CC1C92ADE50050CAB0 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					F4CE30E51C92ADE50050CAB0 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = F4CE30CC1C92ADE50050CAB0;
+					};
+					F4CE30F01C92ADE50050CAB0 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = F4CE30CC1C92ADE50050CAB0;
+					};
+				};
+			};
+			buildConfigurationList = F4CE30C81C92ADE50050CAB0 /* Build configuration list for PBXProject "iCarousel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4CE30C41C92ADE50050CAB0;
+			productRefGroup = F4CE30CE1C92ADE50050CAB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4CE30CC1C92ADE50050CAB0 /* iCarousel */,
+				F4CE30E51C92ADE50050CAB0 /* iCarouselTests */,
+				F4CE30F01C92ADE50050CAB0 /* iCarouselUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4CE30CB1C92ADE50050CAB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CE30E01C92ADE50050CAB0 /* LaunchScreen.storyboard in Resources */,
+				F4CE30DD1C92ADE50050CAB0 /* Assets.xcassets in Resources */,
+				F4CE30DB1C92ADE50050CAB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CE30E41C92ADE50050CAB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CE30EF1C92ADE50050CAB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1038F757D8D21EFBB474044A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59B04D7B482AFBA80E937984 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C42F01DB738BE14895D7178 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4CE30C91C92ADE50050CAB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CE30D81C92ADE50050CAB0 /* ViewController.m in Sources */,
+				F4CE30D51C92ADE50050CAB0 /* AppDelegate.m in Sources */,
+				F4CE30D21C92ADE50050CAB0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CE30E21C92ADE50050CAB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CE30EB1C92ADE50050CAB0 /* iCarouselTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CE30ED1C92ADE50050CAB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CE30F61C92ADE50050CAB0 /* iCarouselUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4CE30E81C92ADE50050CAB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4CE30CC1C92ADE50050CAB0 /* iCarousel */;
+			targetProxy = F4CE30E71C92ADE50050CAB0 /* PBXContainerItemProxy */;
+		};
+		F4CE30F31C92ADE50050CAB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4CE30CC1C92ADE50050CAB0 /* iCarousel */;
+			targetProxy = F4CE30F21C92ADE50050CAB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4CE30D91C92ADE50050CAB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4CE30DA1C92ADE50050CAB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4CE30DE1C92ADE50050CAB0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4CE30DF1C92ADE50050CAB0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4CE30F81C92ADE50050CAB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4CE30F91C92ADE50050CAB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4CE30FB1C92ADE50050CAB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC6A4C745E216125234F766F /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iCarousel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YingCe.iCarousel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F4CE30FC1C92ADE50050CAB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DAE7417B673007F16A9B233 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iCarousel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YingCe.iCarousel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F4CE30FE1C92ADE50050CAB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iCarouselTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YingCe.iCarouselTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCarousel.app/iCarousel";
+			};
+			name = Debug;
+		};
+		F4CE30FF1C92ADE50050CAB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = iCarouselTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YingCe.iCarouselTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCarousel.app/iCarousel";
+			};
+			name = Release;
+		};
+		F4CE31011C92ADE50050CAB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iCarouselUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YingCe.iCarouselUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iCarousel;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F4CE31021C92ADE50050CAB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = iCarouselUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YingCe.iCarouselUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = iCarousel;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4CE30C81C92ADE50050CAB0 /* Build configuration list for PBXProject "iCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CE30F81C92ADE50050CAB0 /* Debug */,
+				F4CE30F91C92ADE50050CAB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4CE30FA1C92ADE50050CAB0 /* Build configuration list for PBXNativeTarget "iCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CE30FB1C92ADE50050CAB0 /* Debug */,
+				F4CE30FC1C92ADE50050CAB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4CE30FD1C92ADE50050CAB0 /* Build configuration list for PBXNativeTarget "iCarouselTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CE30FE1C92ADE50050CAB0 /* Debug */,
+				F4CE30FF1C92ADE50050CAB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4CE31001C92ADE50050CAB0 /* Build configuration list for PBXNativeTarget "iCarouselUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CE31011C92ADE50050CAB0 /* Debug */,
+				F4CE31021C92ADE50050CAB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4CE30C51C92ADE50050CAB0 /* Project object */;
+}
