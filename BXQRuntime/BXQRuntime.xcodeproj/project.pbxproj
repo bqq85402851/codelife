@@ -15,6 +15,8 @@
 		F428177E1CAA485F0022B48D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F428177C1CAA485F0022B48D /* LaunchScreen.storyboard */; };
 		F42817891CAA485F0022B48D /* BXQRuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F42817881CAA485F0022B48D /* BXQRuntimeTests.m */; };
 		F42817941CAA485F0022B48D /* BXQRuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F42817931CAA485F0022B48D /* BXQRuntimeUITests.m */; };
+		F42817A31CAA55B20022B48D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F42817A21CAA55B20022B48D /* Person.m */; };
+		F42817A61CAA6A760022B48D /* Person+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F42817A51CAA6A760022B48D /* Person+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		F428178F1CAA485F0022B48D /* BXQRuntimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BXQRuntimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42817931CAA485F0022B48D /* BXQRuntimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BXQRuntimeUITests.m; sourceTree = "<group>"; };
 		F42817951CAA485F0022B48D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42817A11CAA55B20022B48D /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F42817A21CAA55B20022B48D /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F42817A41CAA6A760022B48D /* Person+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+Extension.h"; sourceTree = "<group>"; };
+		F42817A51CAA6A760022B48D /* Person+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				F42817721CAA485E0022B48D /* AppDelegate.m */,
 				F42817741CAA485E0022B48D /* ViewController.h */,
 				F42817751CAA485E0022B48D /* ViewController.m */,
+				F42817A11CAA55B20022B48D /* Person.h */,
+				F42817A21CAA55B20022B48D /* Person.m */,
+				F42817A41CAA6A760022B48D /* Person+Extension.h */,
+				F42817A51CAA6A760022B48D /* Person+Extension.m */,
 				F42817771CAA485E0022B48D /* Main.storyboard */,
 				F428177A1CAA485F0022B48D /* Assets.xcassets */,
 				F428177C1CAA485F0022B48D /* LaunchScreen.storyboard */,
@@ -272,6 +282,8 @@
 			files = (
 				F42817761CAA485E0022B48D /* ViewController.m in Sources */,
 				F42817731CAA485E0022B48D /* AppDelegate.m in Sources */,
+				F42817A31CAA55B20022B48D /* Person.m in Sources */,
+				F42817A61CAA6A760022B48D /* Person+Extension.m in Sources */,
 				F42817701CAA485E0022B48D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,7 +425,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = BXQRuntime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YingCe.BXQRuntime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +438,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = BXQRuntime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YingCe.BXQRuntime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
