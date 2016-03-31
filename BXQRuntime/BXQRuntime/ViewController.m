@@ -73,7 +73,6 @@
      */
     person.price=@"物价";
     NSLog(@"price=%@",person.price);
-    
 }
 - (void)study {
     NSLog(@"study");

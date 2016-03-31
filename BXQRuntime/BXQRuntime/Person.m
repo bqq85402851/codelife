@@ -33,6 +33,7 @@
     for (int a=0; a<ivarCount; a++) {
         Ivar ivar=ivarList[a];
         const char*name=ivar_getName(ivar);
+    
     }
 }
 @end
