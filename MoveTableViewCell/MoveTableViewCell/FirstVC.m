@@ -28,12 +28,34 @@
     [foot setAutomaticallyRefresh:YES];
     [foot setTriggerAutomaticallyRefreshPercent:-80];
     self.mainTableView.mj_footer=foot;
+    
+    NSMutableArray*Arr=[NSMutableArray array];
+    for (int a=1; a<14; a++) {
+        [Arr addObject:[UIImage imageNamed:[NSString stringWithFormat:@"test_%d",a]]];
+    }
+    for (int a=13; a>0; a--) {
+       [Arr addObject:[UIImage imageNamed:[NSString stringWithFormat:@"test_%d",a]]];
+    }
+    
+    MJRefreshGifHeader*head=[[MJRefreshGifHeader alloc]init];
+    head.lastUpdatedTimeLabel.hidden=YES;
+    head.stateLabel.hidden=YES;
+    [head setRefreshingTarget:self refreshingAction:@selector(refreshData)];
+    [head setImages:@[[UIImage imageNamed:@"test"]] forState:MJRefreshStateIdle];
+    [head setImages:Arr duration:0.5 forState:MJRefreshStateRefreshing];
+    self.mainTableView.mj_header=head;
+
 }
 -(void)addData{
     NSLog(@"refreshing");
     page+=20;
     [self.mainTableView reloadData];
  
+}
+-(void)refreshData{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.mainTableView.mj_header endRefreshing];
+    });
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return page;
