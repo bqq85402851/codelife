@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Canvas 绘图</title>
+<style type="text/css">
+body
+{
+	font-size:70%;
+	font-family:Verdana, helvetica,arial,sans-serif;
+	}
+</style>
+<script type="text/javascript">
+function cnvs_getCoordinates(e){
+	x=e.clientX;
+	y=e.clientY;
+	document.getElementById("xycoordinates").innerHTML="Coordinates:("+ x +","+ y +")";
+	}
+function cnvs_clearCoordinates{
+	document.getElementById("xycoordinates").innerHTML="";
+	}
+
+</script>
+</head>
+
+<body style="margin:0px;">
+<p>把鼠标停在下面矩形上可以看到坐标</p>
+<div id="coordiv" style="float:left;width:199px;height:99px;border:1px solid #c3c3c3" onMouseMove="cnvs_getCoordinates(event)" onMouseOut="cnvs_clearCoordinates"></div>
+<br/>
+<br/>
+<br/>
+<div id="xycoordinates"></div>
+
+<canvas id="myCanvas" width="200" height="150" style="border:1px solid #4FB8D8;">
+Your browser does not support the canvas element.
+</canvas>
+<script type="text/javascript">
+var c=document.getElementById("myCanvas");
+var cxt=c.getContext("2d");
+cxt.moveTo(10,10);
+cxt.lineTo(150,50);
+cxt.lineTo(10,50);
+cxt.stroke();
+
+var r=document.getElementById("myCanvas");
+var rxt=r.getContext("2d");
+rxt.fillStyle="#FF0000";
+rxt.beginPath();
+rxt.arc(70,18,15,0,Math.PI/2,false); 
+rxt.closePath();
+rxt.fill();
+
+var g=document.getElementById("myCanvas");
+var gxt=g.getContext("2d");
+var grd=gxt.createLinearGradient(0,0,200,150);
+grd.addColorStop(0,"#FF000");
+grd.addColorStop(1,"#00FF00");
+gxt.fillStyle=grd;
+gxt.fillRect(0,0,200,150);
+</script>
+</body>
+</html>
