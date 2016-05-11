@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImageView (SDUImage)
-//@property NSNumber*isAddimage;
+@property (nonatomic,strong)NSNumber* isAddimage;
 -(void)sd_setImageUrl:(NSString*)url;
 @end

@@ -12,7 +12,8 @@
 -(void)setPrice:(NSString *)price{
     objc_setAssociatedObject(self, "price", price, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
--(NSString*)price{
-    return objc_getAssociatedObject(self, "price");
-}
+//-(NSString*)price{
+//    return objc_getAssociatedObject(self, "price");
+//}
+
 @end
