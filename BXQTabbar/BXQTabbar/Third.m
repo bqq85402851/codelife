@@ -9,5 +9,8 @@
 #import "Third.h"
 
 @implementation Third
-
+-(void)viewDidLoad{
+    [super viewDidLoad];
+    self.view.backgroundColor=[UIColor cyanColor];
+}
 @end

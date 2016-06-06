@@ -9,5 +9,8 @@
 #import "Fourth.h"
 
 @implementation Fourth
-
+-(void)viewDidLoad{
+    [super viewDidLoad];
+    self.view.backgroundColor=[UIColor greenColor];
+}
 @end

@@ -23,18 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    First*first=[[First alloc]init];
-    first.title=@"1";
-    Second*second=[[Second alloc]init];
-    second.title=@"2";
-    Third*third=[[Third alloc]init];
-    third.title=@"3";
-    Fourth*fourth=[[Fourth alloc]init];
-    fourth.title=@"4";
-    
-    UITabBarController*tabbar=[[UITabBarController alloc]init];
-    tabbar.viewControllers=@[first,second,third,fourth];
-    
     UIButton*button=[UIButton buttonWithType:UIButtonTypeSystem];
     button.frame=CGRectMake(100, 100, 100, 50);
     [button setTitle:@"click" forState:UIControlStateNormal];

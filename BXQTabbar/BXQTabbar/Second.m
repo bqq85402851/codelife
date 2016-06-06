@@ -9,5 +9,8 @@
 #import "Second.h"
 
 @implementation Second
-
+-(void)viewDidLoad{
+    [super viewDidLoad];
+    self.view.backgroundColor=[UIColor orangeColor];
+}
 @end

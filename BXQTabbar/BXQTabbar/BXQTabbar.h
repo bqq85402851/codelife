@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class BXQTabbar;
+@protocol BXQTabbarDelegeta<NSObject>
+-(void)tabBarPlusBtnClick:(BXQTabbar*)tabBar;
+@end
 @interface BXQTabbar : UITabBar
 @property(nonatomic,strong)UIButton*plusBtn;
+@property(nonatomic,weak)id<BXQTabbarDelegeta>tabBarDelegate;
 @end

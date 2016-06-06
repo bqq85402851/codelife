@@ -9,5 +9,8 @@
 #import "First.h"
 
 @implementation First
-
+-(void)viewDidLoad{
+    [super viewDidLoad];
+    self.view.backgroundColor=[UIColor purpleColor];
+}
 @end
