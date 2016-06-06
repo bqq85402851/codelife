@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <objc/message.h>
+#import <objc/runtime.h>
 #import "Person.h"
 #import "Person+Extension.h"
 @interface ViewController ()
@@ -72,7 +73,23 @@
      *  @return
      */
     person.price=@"物价";
-    NSLog(@"price=%@",person.price);
+    //NSLog(@"price=%@",person.price);
+    
+    /**
+     *  获取UITextFiled成员变量的名称
+     *
+     *  @return
+     */
+    unsigned int outCount=0;
+    Ivar*ivars=class_copyIvarList([UITextField class], &outCount);
+    for (int i=0; i<outCount; i++) {
+        Ivar ivar=ivars[i];
+        NSLog(@"%s",ivar_getName(ivar));
+    }
+    
+    Class stringclass=NSClassFromString(@"NSArray");
+    NSString*myString=[stringclass stringWithString:@"Hello World"];
+    NSLog(@"%@",myString);
 }
 - (void)study {
     NSLog(@"study");

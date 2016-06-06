@@ -1,0 +1,10 @@
+platform:ios
+pod 'SVProgressHUD'
+pod 'MJRefresh'
+pod 'MBProgressHUD'
+pod 'libqrencode'
+
+platform:ios,"7.0"
+pod 'AFNetworking'
+pod 'ZBarSDK'
+pod 'SDWebImage'

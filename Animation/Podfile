@@ -1,0 +1,5 @@
+platform:ios
+pod 'libqrencode'
+platform :ios, '8.0'
+pod 'AFNetworking', '~> 3.0'
+pod 'FDFullscreenPopGesture', '1.1'
