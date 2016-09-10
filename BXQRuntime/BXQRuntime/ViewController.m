@@ -87,10 +87,33 @@
         NSLog(@"%s",ivar_getName(ivar));
     }
     
-    Class stringclass=NSClassFromString(@"NSArray");
-    NSString*myString=[stringclass stringWithString:@"Hello World"];
-    NSLog(@"%@",myString);
+//    Class stringclass=NSClassFromString(@"NSArray");
+//    NSString*myString=[stringclass stringWithString:@"Hello World"];
+//    NSLog(@"%@",myString);
 }
++(void)load{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class=[self class];
+        SEL originSelector=@selector(viewWillAppear:);
+        SEL swizzledSelector=@selector(XQ_viewWillAppear:);
+        
+        Method originMethod=class_getInstanceMethod(class, originSelector);
+        Method swizzledMethod=class_getInstanceMethod(class, swizzledSelector);
+        
+        if (class_addMethod(class, originSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod))) {
+            class_replaceMethod(class, swizzledSelector, method_getImplementation(originMethod), method_getTypeEncoding(originMethod));
+        }else{
+            method_exchangeImplementations(originMethod, swizzledMethod);
+        }
+    });
+  
+}
+-(void)XQ_viewWillAppear:(BOOL)animated{
+    [self XQ_viewWillAppear:animated];
+    NSLog(@"change =======>%@",self);
+}
+
 - (void)study {
     NSLog(@"study");
 }

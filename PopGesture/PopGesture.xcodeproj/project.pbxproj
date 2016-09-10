@@ -15,6 +15,10 @@
 		F45184F61D06BC46003A0435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45184F41D06BC46003A0435 /* LaunchScreen.storyboard */; };
 		F45185011D06BC46003A0435 /* PopGestureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45185001D06BC46003A0435 /* PopGestureTests.m */; };
 		F451850C1D06BC46003A0435 /* PopGestureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F451850B1D06BC46003A0435 /* PopGestureUITests.m */; };
+		F451851B1D06C698003A0435 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F451851A1D06C698003A0435 /* SecondViewController.m */; };
+		F45764F41D19294600463B7E /* Nav.m in Sources */ = {isa = PBXBuildFile; fileRef = F45764F31D19294600463B7E /* Nav.m */; };
+		F45E1F891D23B11700A5F3A3 /* PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F45E1F881D23B11700A5F3A3 /* PopAnimation.m */; };
+		F45E1F8C1D23C22700A5F3A3 /* NavigationInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F45E1F8B1D23C22700A5F3A3 /* NavigationInteractiveTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		F45185071D06BC46003A0435 /* PopGestureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopGestureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F451850B1D06BC46003A0435 /* PopGestureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopGestureUITests.m; sourceTree = "<group>"; };
 		F451850D1D06BC46003A0435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45185191D06C698003A0435 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		F451851A1D06C698003A0435 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F45764F21D19294600463B7E /* Nav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nav.h; sourceTree = "<group>"; };
+		F45764F31D19294600463B7E /* Nav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nav.m; sourceTree = "<group>"; };
+		F45E1F871D23B11700A5F3A3 /* PopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAnimation.h; sourceTree = "<group>"; };
+		F45E1F881D23B11700A5F3A3 /* PopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAnimation.m; sourceTree = "<group>"; };
+		F45E1F8A1D23C22700A5F3A3 /* NavigationInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationInteractiveTransition.h; sourceTree = "<group>"; };
+		F45E1F8B1D23C22700A5F3A3 /* NavigationInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationInteractiveTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,14 @@
 				F45184EA1D06BC46003A0435 /* AppDelegate.m */,
 				F45184EC1D06BC46003A0435 /* ViewController.h */,
 				F45184ED1D06BC46003A0435 /* ViewController.m */,
+				F45185191D06C698003A0435 /* SecondViewController.h */,
+				F451851A1D06C698003A0435 /* SecondViewController.m */,
+				F45764F21D19294600463B7E /* Nav.h */,
+				F45764F31D19294600463B7E /* Nav.m */,
+				F45E1F871D23B11700A5F3A3 /* PopAnimation.h */,
+				F45E1F881D23B11700A5F3A3 /* PopAnimation.m */,
+				F45E1F8A1D23C22700A5F3A3 /* NavigationInteractiveTransition.h */,
+				F45E1F8B1D23C22700A5F3A3 /* NavigationInteractiveTransition.m */,
 				F45184EF1D06BC46003A0435 /* Main.storyboard */,
 				F45184F21D06BC46003A0435 /* Assets.xcassets */,
 				F45184F41D06BC46003A0435 /* LaunchScreen.storyboard */,
@@ -270,7 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F451851B1D06C698003A0435 /* SecondViewController.m in Sources */,
+				F45764F41D19294600463B7E /* Nav.m in Sources */,
+				F45E1F891D23B11700A5F3A3 /* PopAnimation.m in Sources */,
 				F45184EE1D06BC46003A0435 /* ViewController.m in Sources */,
+				F45E1F8C1D23C22700A5F3A3 /* NavigationInteractiveTransition.m in Sources */,
 				F45184EB1D06BC46003A0435 /* AppDelegate.m in Sources */,
 				F45184E81D06BC46003A0435 /* main.m in Sources */,
 			);
@@ -414,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PopGesture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YingCe.PopGesture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PopGesture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YingCe.PopGesture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +524,7 @@
 				F45185121D06BC46003A0435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F45185131D06BC46003A0435 /* Build configuration list for PBXNativeTarget "PopGestureTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +533,7 @@
 				F45185151D06BC46003A0435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F45185161D06BC46003A0435 /* Build configuration list for PBXNativeTarget "PopGestureUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +542,7 @@
 				F45185181D06BC46003A0435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
